@@ -159,6 +159,7 @@ struct Values {
     bool enable_cache_clear;
     int clear_cache_secs;
     bool sharper_distant_objects;
+    int min_vertices_per_thread;
     u16 texture_filter_factor;
     std::string texture_filter_name;
 
