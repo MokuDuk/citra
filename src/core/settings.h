@@ -158,6 +158,7 @@ struct Values {
     int screen_refresh_rate;
     bool enable_cache_clear;
     int clear_cache_secs;
+    bool sharper_distant_objects;
     u16 texture_filter_factor;
     std::string texture_filter_name;
 
