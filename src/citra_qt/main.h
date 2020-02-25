@@ -113,6 +113,7 @@ private:
 
     void ConnectWidgetEvents();
     void ConnectMenuEvents();
+    void ConnectToolbarEvents();
 
     void PreventOSSleep();
     void AllowOSSleep();
@@ -164,6 +165,7 @@ private slots:
     void OnPauseGame();
     void OnStopGame();
     void OnMenuReportCompatibility();
+    void OnResetGame();
     /// Called whenever a user selects a game in the game list widget.
     void OnGameListLoadFile(QString game_path);
     void OnGameListOpenFolder(u64 program_id, GameListOpenTarget target);
@@ -211,6 +213,7 @@ private slots:
     void OnCheckForUpdates();
     void OnOpenUpdater();
     void OnLanguageChanged(const QString& locale);
+    void Onshowtoolbar();
 
 private:
     bool ValidateMovie(const QString& path, u64 program_id = 0);
@@ -220,6 +223,8 @@ private:
     void UpdateWindowTitle();
     void RetranslateStatusBar();
     void InstallCIA(QStringList filepaths);
+
+    QString current_game_path; // To reset the game
 
     Ui::MainWindow ui;
 
