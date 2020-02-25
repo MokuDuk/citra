@@ -68,6 +68,13 @@
         <string>Emulation</string>
        </property>
        <layout class="QGridLayout" name="gridLayout">
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="toggle_is_new_3ds">
+          <property name="text">
+           <string>Use new3DS memory mapping</string>
+          </property>
+         </widget>
+        </item>
         <item row="2" column="0">
          <widget class="QCheckBox" name="toggle_use_force_indexed">
           <property name="text">
