@@ -592,6 +592,8 @@ public:
          */
         void CheckNew3DSApp(Kernel::HLERequestContext& ctx);
 
+        void ReplySleepQuery(Kernel::HLERequestContext& ctx);
+
         /**
          * Wrapper for PTMSYSM:CheckNew3DS
          * APT::CheckNew3DS service function
